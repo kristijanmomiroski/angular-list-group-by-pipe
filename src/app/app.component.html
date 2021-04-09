@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let res of mockResponse | groupByDate">{{res.date}}
+    <ul>
+      <li *ngFor="let event of res.events">{{event.id}} {{event.title}}</li>
+    </ul>
+  </li>
+</ul>
